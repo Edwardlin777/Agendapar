@@ -1,7 +1,7 @@
 <?php
   function format($p,$inserted) {
     	$r = [$p[0]];
-        
+
         for ($x = 1; $x < sizeof($p); $x++)
         {
             array_push( $r, $inserted[$x-1], $p[$x] );//array_merge($r,$inserted[$x-1]);
@@ -11,22 +11,19 @@
 	function get($conn,$sql)
 	{
 	  $results = mysqli_query($conn, $sql);
-	  $r = []
-	  if (mysqli_num_rows($result) > 0) {
-		  while($row = mysqli_fetch_assoc($result)) {
-		   array_push($r,$row)
+	  $r = [];
+
+		  while($row = mysqli_fetch_assoc($results)) {
+		   array_push($r,$row);
 		  }
 		  return $r;
 
-	  } else {
-			return [];
-	  }
 	}
 
 $add_numero_documento=$_POST["numero_documento"];
 
-//confirmar contraseña
-if ($add_password==$add_confirm_password) {
+//confirmar contraseï¿½a
+
 
 
   // Create connection
@@ -35,33 +32,48 @@ if ($add_password==$add_confirm_password) {
   // Check connection
   if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
-  }
+}
 
 
 $sql = "SELECT * FROM estudiante WHERE id_estudiante like '$add_numero_documento' ";
 $usuario = get($conn,$sql)[0];
-echo "<h1>Hi ". $usuario['nombre'] ." ". $usuario['apellido']."</h1>";
+echo "<h1>Hi ". $usuario['nombres'] ." ". $usuario['apellidos']."</h1>";
 
 $sql = "SELECT * FROM carrera WHERE id_estudiante like '$add_numero_documento' ";
 $carrera = get($conn,$sql)[0];
-echo "<p> estas cursando la carrera <b>" . $carrera["nombre_carrera"] . "</b></p>";
+echo "<p> estas cursando la carrera <b>" . $carrera["carrera_cursada"] . "</b></p>";
 
 $id_carrera = $carrera["id_carrera"];
 $sql = "SELECT * FROM semestre WHERE id_carrera like '$id_carrera' ";
-$semestre = get($conn,$sql);
+$semestre = get($conn,$sql)[0];
 
-$id_semestre = semestre["id_semestre"];
-$sql = "SELECT * FROM materia WHERE id_semestre like '$id_carrera' ";
+print_r($semestre["id_semestre"]);
+
+$id_semestre = $semestre["id_semestre"];
+$sql = "SELECT * FROM materia WHERE id_semestre like '$id_semestre' ";
 $materias = get($conn,$sql);
 
 
-echo "<h2> estas son tus materias </h2>"
+echo "<h2> estas son tus materias </h2>";
 for ($x = 0; $x < sizeof($materias); $x++)
 {
-  echo "<h3>" . $materias[$d]["nombre_materia"] . "</h3> <button href = '' > ver </button>";
+  $id_materia = $materias[$x]["id_materia"];
+
+  echo "<h3>" . $materias[$x]["nombre_materia"] .
+
+  "<br><form action='codigomateria.php' method='POST'>
+
+    Ver la materia(s)
+
+    <input type='text' name='id_materia' value='$id_materia'>
+
+    <input type='submit' name='consultar' value='consultar'>
+
+
+  </form>";
 }
 mysqli_close($conn);
-}
+
 //formato deseado
 	/*
 		$notas = [[["Activida no se que","30","30%"],[]],[["Activida introductoria","20","60%"],[]],[["Actividad leer 30 libros","40","10%"],[]]];
