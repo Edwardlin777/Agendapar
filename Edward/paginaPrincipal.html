@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head lang="es">
     <meta charset="utf-8">
+
     <title>Mi Agenda</title>
+    <link rel="stylesheet" href="estilos_css\estiloPaginaPrincipal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -13,6 +16,43 @@
     <a href="billetera.html">Billetera</a><br><br>
     <a href="horario.html">Horario</a><br><br>
     <a href="configuración.html">Configuración</a><br><br>
+
+    <section>
+      <div class="contenedor-textos">
+        <h2>Iniciar Sesion</h2>
+        <p>Llene su email y contraseña</p>
+        <a href="#" class="cta">Iniciar Sesion</a>
+      </div>
+
+    </section>
+
+    <div class="modal-container">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <img src="cerrar.svg" alt="">
+        <div class="modal-textos">
+              <h2>INSERTE PHP AQUI</h2>
+              <p>y aqui texto al parecer.</p>
+        </div>
+      </div>
+    </div>
+
+<script type="text/javascript" src="javascript\funcionesModal.js">
+
+    let cerrar = document.querySelectorAll('.close')[0];
+    let abrir = document.querySelectorAll('.cta')[0];
+    let modal = document.querySelectorAll('.modal')[0];
+    let modalC = document.querySelectorAll('.modal-container')[0];
+
+    abrir.addEventListener("click", fuction(e){
+        e.preventDefault();
+        modalC.style.opacity = '1';
+        modalC.style.visibility = 'visible';
+        modal.classList.toggle('modal-close');
+    });
+
+</script>
+
 
   </body>
 </html>
