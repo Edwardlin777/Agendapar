@@ -2,6 +2,7 @@ body {
 	font-family: arial, Helvetica, sans-serif;
 	margin: 15px;
 	background-image: url(tiempo.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed; 
 }
@@ -74,6 +75,7 @@ input[type="password"]:focus{
 }
 .button:hover{
 	background:cadetblue;
+	transition: 0.15s ease-in;
 }
 p{
 	text-align: center;
@@ -86,6 +88,7 @@ p{
 }
 .link:hover{
 	color: cadetblue;
+	transition: 0.15 ease-in;
 }
 @media(min-width: 768px)
 {
