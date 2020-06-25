@@ -78,6 +78,9 @@ input[type="password"]:focus{
 p{
 	text-align: center;
 }
+.input-boton-contenedor{
+	margin-left: auto;
+}
 .link{
 	text-decoration: none;
 	color:red;
