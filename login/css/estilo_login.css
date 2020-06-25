@@ -34,10 +34,13 @@ border: none;
 box-shadow: 0 0 8px 0 dodgerblue;
 }
 input[type="text"]{
-font-size: 20px;
 width: 85%;
+border: 2px solid dodgerblue;
+border-radius: 4px;
+margin: 8px 0;
+outline: none;
 padding: 10px;
-border: red;
+
 box-shadow: 0 0 8px 0 dodgerblue;
 }
 input[type="text"]:focus{
