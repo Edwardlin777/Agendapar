@@ -4,7 +4,7 @@ body {
 	background-image: url(tiempo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed; 
 }
 *{
 	box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 	padding: 15px;
 }
 .formulario{
-	background-color: rgba( 255, 255, 255, 0.45);
+	background-color: rgba(236, 244, 245, 0.45);
 	margin-top: 150px;
 	padding: 3px;
 	border:none;
@@ -97,7 +97,7 @@ p{
 	.formulario{
 		margin: auto;
 		width: 500px;
-		margin-top: 150px;
+		margin-top: 0px;
 		border-radius: 2%;
 	}
 }
