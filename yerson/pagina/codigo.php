@@ -65,9 +65,9 @@ for ($x = 0; $x < sizeof($materias); $x++)
 
     Ver la materia(s)
 
-    <input type='text' name='id_materia' value='$id_materia'>
+    <!--<input type='text' name='id_materia' value='$id_materia'>-->
 
-    <input type='submit' name='consultar' value='consultar'>
+    <input type='submit' name='id_materia' value='$id_materia'>
 
 
   </form>";
