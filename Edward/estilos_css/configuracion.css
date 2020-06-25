@@ -1,0 +1,28 @@
+*{
+	background: #fff;
+}
+
+.contenedor{
+	background-color:#eeeeee; 
+	width:89%;
+	padding: 15px;
+	
+}
+.formulario{
+	background:#eeeeee; 
+	margin-top:15px ;
+	padding: 3px;
+	width: 20%;
+	border-radius: 5px
+}
+.contenedor h1{
+	background-color: #eeeeee;
+}
+.contenedor a{
+	background-color: #eeeeee;
+}
+.link{
+	text-decoration: none;
+	color:#d22c21;
+	font-weight:600; 
+}
