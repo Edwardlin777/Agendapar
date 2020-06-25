@@ -80,7 +80,6 @@ input[type="password"]:focus{
 p{
 	text-align: center;
 }
-
 .link{
 	text-decoration: none;
 	color:red;
@@ -89,6 +88,7 @@ p{
 .link:hover{
 	color: cadetblue;
 	transition: 0.15 ease-in;
+	text-decoration: underline;
 }
 @media(min-width: 768px)
 {
