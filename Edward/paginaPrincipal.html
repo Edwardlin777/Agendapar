@@ -11,6 +11,24 @@
 
     <h1>Mi Agenda</h1>
 
+    <header>
+      <nav class="navegacion">
+        <ul class="menu">
+          <li><a href="resumen.html">Resumen</a></li>
+          <li><a href="materias.html">Materias</a>
+              <ul class="submenu">
+                  <li><a href="#">Programacion</a></li>
+                  <li><a href="#">Promover</a></li>
+                  <li><a href="#">Ingles</a></li>
+              </ul>
+          </li>
+          <li><a href="billetera.html">Billetera</a></li>
+          <li><a href="horario.html">Horario</a></li>
+          <li><a href="configuración.html">Configuración</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <a href="resumen.html">Resumen</a><br><br>
     <a href="materias.html">Materias</a><br><br>
     <a href="billetera.html">Billetera</a><br><br>
@@ -37,21 +55,7 @@
       </div>
     </div>
 
-<script type="text/javascript" src="javascript\funcionesModal.js">
 
-    let cerrar = document.querySelectorAll('.close')[0];
-    let abrir = document.querySelectorAll('.cta')[0];
-    let modal = document.querySelectorAll('.modal')[0];
-    let modalC = document.querySelectorAll('.modal-container')[0];
-
-    abrir.addEventListener("click", fuction(e){
-        e.preventDefault();
-        modalC.style.opacity = '1';
-        modalC.style.visibility = 'visible';
-        modal.classList.toggle('modal-close');
-    });
-
-</script>
 
 
   </body>
