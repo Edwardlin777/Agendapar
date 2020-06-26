@@ -30,7 +30,7 @@ input[type="password"]{
 	width: 85%;
 	border: 0px solid dodgerblue;
 	border-radius: 4px;
-	margin: 8px 0;
+	margin: 3px 0;
 	outline: none;
 	padding: 10px;
 box-shadow: 0 0 8px 0 dodgerblue;
@@ -39,7 +39,7 @@ input[type="text"]{
 width: 85%;
 border: 0px solid dodgerblue;
 border-radius: 4px;
-margin: 8px 0;
+margin: 3px 0;
 outline: none;
 padding: 10px;
 box-shadow: 0 0 8px 0 dodgerblue;
@@ -60,8 +60,8 @@ input[type="password"]:focus{
 }
 .input-contenedor{
 	margin-bottom: 5px;
-	padding: 5;
-	margin: 5px 10px 5px 40px;
+	padding: auto;
+	margin: 3px 10px 3px 40px;
 }
 .icon{
 	min-width: 20px;
