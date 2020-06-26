@@ -106,7 +106,7 @@ p{
 
 	}
 }
-.mapat{
+.mapat > img{
 	display: inline-block;
 	height: 200;
 	width: 80;
