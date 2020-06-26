@@ -60,7 +60,7 @@ input[type="password"]:focus{
 }
 .input-contenedor{
 	margin-bottom: 5px;
-	padding: auto;
+	padding: 5px;
 	margin: 3px 10px 3px 40px;
 }
 .icon{
@@ -103,6 +103,6 @@ p{
 		width: 500px;
 		margin-top: 0px;
 		border-radius: 2%;
-		
+
 	}
 }
