@@ -11,9 +11,12 @@ body{
 }
 
 .navegacion{
-  width: 1000px;
+  position: relative;
+  display: inline-block;
+  width: 700px;
   margin: 30px auto;
   background: #c83609;
+  left: 350PX;
 }
 
 .navegacion ul{
@@ -43,7 +46,7 @@ body{
 .submenu{
   position: absolute;
   background: #c83609;
-  width: 10%;
+  width: 17.6%;
   visibility: hidden;
   opacity: 0;
   transition: opacity 1.5s;
@@ -63,6 +66,67 @@ body{
   visibility: visible;
   opacity: 1;
 }
+.boton1{
+  position: relative;
+  display: inline-block;
+  left: 1190px;
+  bottom: 140px;
+}
+.boton2{
+  position: relative;
+  display: inline-block;
+  left: 1195px;
+  bottom: 140px;
+}
+.iniciar-sesion{
+  font-weight: 1800;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: #313D52;
+  background: white;
+}
+.iniciar-sesion:hover{
+  font-weight: 600;
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+  background: none;
+}
+.registrarse{
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+}
+.registrarse:hover{
+  font-weight: 800;
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: #313D52;
+  background: white;
+}
+.mapat > img{
+	display: inline-block;
+	height: 50px;
+  width: 200px;
+}
+.mapat{
+  position: relative;
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+}
+  /*padding: 4px 0;
+  width: 100px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #283773;
+  background: #fff;*/
 /*{
   margin: 0;
   padding: 0;
