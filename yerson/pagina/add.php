@@ -45,7 +45,7 @@ $sql ="INSERT INTO criterio
       ('',
       '".$_POST["id_corte"]."',
       '".$_POST["peso_criterio"]."',
-      '".$_POST["promedio_criterios"]."',
+      '',
       '".$_POST["nombre_criterio"]."'
 )";
 mysqli_query($conn, $sql);
@@ -66,7 +66,7 @@ $sql ="INSERT INTO corte
       ('',
      '".$_POST["id_materia"]."',
       '".$_POST["nombre_corte"]."',
-      '".$_POST["promedio_corte"]."'
+      ''
 )";
 mysqli_query($conn, $sql);
     break;

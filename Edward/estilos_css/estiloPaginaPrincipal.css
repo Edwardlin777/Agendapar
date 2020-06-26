@@ -16,7 +16,7 @@ body{
   width: 700px;
   margin: 30px auto;
   background: #c83609;
-  left: 350PX;
+  left: 500PX;
 }
 
 .navegacion ul{
@@ -69,13 +69,13 @@ body{
 .boton1{
   position: relative;
   display: inline-block;
-  left: 1190px;
+  left: 1585px;
   bottom: 140px;
 }
 .boton2{
   position: relative;
   display: inline-block;
-  left: 1195px;
+  left: 1590px;
   bottom: 140px;
 }
 .iniciar-sesion{
