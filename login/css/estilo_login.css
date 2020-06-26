@@ -14,8 +14,6 @@ body {
 	padding: 15px;
 }
 .formulario{
-	position: relative;
-	bottom: 50px;
 	background-color: rgba(236, 244, 245, 0.45);
 	margin-top: 150px;
 	padding: 3px;
