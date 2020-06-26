@@ -13,12 +13,18 @@ body{
 .navegacion{
   position: relative;
   display: inline-block;
-  width: 700px;
+  width: 1000px;
   margin: 30px auto;
   background: #c83609;
+  left: 260PX;
+}
+.navegacion ul li{
+  width: 19.679%;
+}
+.titulo2{
+  color: grey;
   left: 500PX;
 }
-
 .navegacion ul{
   list-style: none;
 }
@@ -69,14 +75,24 @@ body{
 .boton1{
   position: relative;
   display: inline-block;
+<<<<<<< HEAD
+  left: 1165px;
+  bottom: 530px;
+=======
   left: 1585px;
   bottom: 140px;
+>>>>>>> b0c074ee44f845940f4de186b9718adec876675c
 }
 .boton2{
   position: relative;
   display: inline-block;
+<<<<<<< HEAD
+  left: 1180px;
+  bottom: 530px;
+=======
   left: 1590px;
   bottom: 140px;
+>>>>>>> b0c074ee44f845940f4de186b9718adec876675c
 }
 .iniciar-sesion{
   font-weight: 1800;
@@ -119,6 +135,45 @@ body{
   top: 10px;
   left: 10px;
 }
+.cuadro1{
+  text-align: center;
+  left: -285px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+	background:#eeeeee;
+	padding: 10px;
+	width: 300px;
+}
+.cuadro2{
+  text-align: center;
+  left: -200px;
+  height: 350px;
+  position: relative;
+  display: inline-block;
+  background:#eeeeee;
+	padding: 3px;
+  width: 650px;
+  bottom: -15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cuadro3{
+  text-align: center;
+  left: 1175px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  background:#eeeeee;
+	padding: 30px;
+  width: 300px;
+  bottom: 500px;
+}
+.agendafea{
+  height: 180px;
+  width: 190px;
+}
+
+
   /*padding: 4px 0;
   width: 100px;
   border: 1px solid #fff;
