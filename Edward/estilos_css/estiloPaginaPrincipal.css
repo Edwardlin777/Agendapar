@@ -16,7 +16,8 @@ body{
   width: 1000px;
   margin: 30px auto;
   background: #c83609;
-  left: 260PX;
+  left: 440px;
+
 }
 .navegacion ul li{
   width: 19.679%;
@@ -52,14 +53,15 @@ body{
 .submenu{
   position: absolute;
   background: #c83609;
-  width: 17.6%;
+  width: 19.69%;
   visibility: hidden;
   opacity: 0;
   transition: opacity 1.5s;
+  padding: 10px 20px 10px 20px;
 }
 
 .submenu li a{
-  display: block;
+  display: inline-block;
   padding: 15px;
   color: #000;
   font-family: 'open sans';
@@ -75,25 +77,17 @@ body{
 .boton1{
   position: relative;
   display: inline-block;
-<<<<<<< HEAD
-  left: 1165px;
-  bottom: 530px;
-=======
-  left: 1585px;
-  bottom: 140px;
->>>>>>> b0c074ee44f845940f4de186b9718adec876675c
-}
+  left: 1570px;
+  bottom: 520px;
+  }
+
 .boton2{
   position: relative;
   display: inline-block;
-<<<<<<< HEAD
-  left: 1180px;
-  bottom: 530px;
-=======
-  left: 1590px;
-  bottom: 140px;
->>>>>>> b0c074ee44f845940f4de186b9718adec876675c
+  left: 1580px;
+  bottom: 520px;
 }
+
 .iniciar-sesion{
   font-weight: 1800;
   text-decoration: none;
@@ -144,29 +138,30 @@ body{
 	background:#eeeeee;
 	padding: 10px;
 	width: 300px;
+  bottom: -5px;
 }
 .cuadro2{
   text-align: center;
-  left: -200px;
-  height: 350px;
+  left: -120px;
+  height: 380px;
   position: relative;
   display: inline-block;
   background:#eeeeee;
 	padding: 3px;
-  width: 650px;
-  bottom: -15px;
+  width: 870px;
+  bottom: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .cuadro3{
   text-align: center;
-  left: 1175px;
+  left: 70px;
   height: 500px;
   position: relative;
   display: inline-block;
   background:#eeeeee;
 	padding: 30px;
   width: 300px;
-  bottom: 500px;
+  bottom: -12px;
 }
 .agendafea{
   height: 180px;
