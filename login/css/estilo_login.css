@@ -23,7 +23,7 @@ h1{
 	text-align: center;
 	color: black;
 	font-size: 40px;
-	margin: 10px 120px;
+	margin: 12px 120px;
 	width: 50%;
 }
 input[type="password"]{
@@ -32,7 +32,7 @@ input[type="password"]{
 	border-radius: 4px;
 	margin: 3px 0;
 	outline: none;
-	padding: auto;
+	padding: 12px;
 box-shadow: 0 0 8px 0 dodgerblue;
 }
 input[type="text"]{
@@ -47,14 +47,14 @@ box-shadow: 0 0 8px 0 dodgerblue;
 input[type="text"]:focus{
 	font-size: 20px;
 	width: 90%;
-	padding: auto;
+	padding: 12px;
 	box-shadow: 0 0 8px 0 gold;
 	border: 2px gold;
 }
 input[type="password"]:focus{
 	font-size: 20px;
 	width: 90%;
-	padding: auto;
+	padding: 12px;
 	box-shadow: 0 0 8px 0 gold;
 	border: 2px gold;
 }
