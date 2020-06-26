@@ -10,7 +10,7 @@ if ($add_password==$add_confirm_password) {
 
 
   // Create connection
-  $conn = mysqli_connect("localhost", "root", "", "agenda7");
+  $conn = mysqli_connect("localhost", "root", "", "agenda8");
 
   // Check connection
   if (!$conn) {

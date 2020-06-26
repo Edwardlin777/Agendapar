@@ -2,7 +2,7 @@
 
 try {
 
-  $base = new PDO("mysql:host=localhost; dbname=agenda7" , "root" , "");
+  $base = new PDO("mysql:host=localhost; dbname=agenda8" , "root" , "");
 
   $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -24,12 +24,12 @@ try {
 
   if($numero_registro!=0){
 
-      header("location:desplegable\pag_principal.html");
+      header("location:../paginaPrincipal.html");
 
 
   }else{
 
-      header("location:login.html");
+      header("location:../paginaPrincipal.html");
 
   }
 
