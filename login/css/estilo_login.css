@@ -59,9 +59,9 @@ input[type="password"]:focus{
 	border: 2px gold;
 }
 .input-contenedor{
-	margin-bottom: 5px;
-	padding: 5px;
-	margin: 3px 10px 3px 40px;
+	margin-bottom: 1px;
+	padding: 1px;
+	margin: 1px 10px 1px 40px;
 }
 .icon{
 	min-width: 20px;
