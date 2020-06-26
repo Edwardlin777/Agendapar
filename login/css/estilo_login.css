@@ -32,7 +32,7 @@ input[type="password"]{
 	border-radius: 4px;
 	margin: 3px 0;
 	outline: none;
-	padding: 10px;
+	padding: auto;
 box-shadow: 0 0 8px 0 dodgerblue;
 }
 input[type="text"]{
@@ -41,20 +41,20 @@ border: 0px solid dodgerblue;
 border-radius: 4px;
 margin: 3px 0;
 outline: none;
-padding: 10px;
+padding: auto;
 box-shadow: 0 0 8px 0 dodgerblue;
 }
 input[type="text"]:focus{
 	font-size: 20px;
 	width: 90%;
-	padding: 12px;
+	padding: auto;
 	box-shadow: 0 0 8px 0 gold;
 	border: 2px gold;
 }
 input[type="password"]:focus{
 	font-size: 20px;
 	width: 90%;
-	padding: 12px;
+	padding: auto;
 	box-shadow: 0 0 8px 0 gold;
 	border: 2px gold;
 }
