@@ -46,14 +46,21 @@
    </head>
    ";
    echo "<h2>Cortes</h2>";
-   echo "<h4>Añadir corte ";
    echo "<form action='add.php' method='POST'>
+   <p>
+   <b>Añadir corte</b>
      		<input hidden type='text' name='clase' value='corte'>
            <input type='text' name='nombre_corte' placeholder='Nombre corte'>
            <input type='number' name='peso_corte' placeholder='peso'>
      		<!--<input type='number' name='promedio_corte' placeholder='promedio'>-->
-   	   	<input type='submit' name='id_materia' value='$id_materia'></form>";
-   echo "</h4>";
+
+
+   	   	<input type='submit' name='id_materia' value='$id_materia'>
+		</p>
+
+		</form>
+
+		";
    for ($c = 0; $c < sizeof($cortes); $c++)
    {
 	   $id_corte = $cortes[$c]["id_corte"];
@@ -64,33 +71,34 @@
    			<!--<input type='submit' name='id_corte' value='-'>-->
 
    		  </form>";
-        echo "<h4>Anadir criterio"
 	   echo "<form action='add.php' method='POST'>
+	   <p><b>Añadir criterio</b>
      			<input hidden type='text' name='clase' value='criterio'>
      			<input type='text' name='nombre_criterio' placeholder='Nombre nuevo criterio'>
      			<input type='number' name='peso_criterio' placeholder='peso del criterio'>
    			<!--<input type='number' name='promedio_criterios' placeholder='promedio'>-->
    			<input type='submit' name='id_corte' value='$id_corte'>
-
+			</p>
    		  </form>";
-		  echo "</h4>";
 
 		   for ($cr = 0; $cr < sizeof($criterios); $cr++)
 		   {
 		   $id_criterio = $criterios[$cr]["id_criterio"];
 			$sql = "SELECT * FROM nota WHERE id_criterio like '$id_criterio' ";
 			$notas = get($conn,$sql);
-			echo "<div class = 'separar'><h4 class = 'separar'>" . $criterios[$cr]["nombre_criterio"];
+			echo "<div class = 'separar'>";
+			echo "<h4 >" . $criterios[$cr]["nombre_criterio"] . "</h4>";
 			echo "<form action='add.php' method='POST'>
+			<p><b >Añadir notas</b>
      				<input hidden type='text' name='clase' value='nota'>
 
    				<input type='text' name='nombre_nota' placeholder='Nombre nueva nota'>
      				<input type='number' name='peso_nota' placeholder='peso nota'>
      				<input type='number' name='valor_nota' placeholder='valor nota'>
    				<input type='submit' name='id_criterio' value='$id_criterio'>
-
+				</p>
    			  </form>";
-			  echo "</h4>";
+
 				for ($n = 0; $n < sizeof($notas); $n++)
 			   {
 				 echo "<div class = 'separar'><p class = 'separar' >" . $notas[$n]["nombre_nota"] . "</p>";
