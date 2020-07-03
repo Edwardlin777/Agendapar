@@ -10,6 +10,18 @@
   </head>
   <body>
 
+<?php
+
+  session_start();
+
+  if(!isset($_SESSION['emailEstudiante'])){
+
+    header("location:login/login.html");
+  }
+
+
+?>
+
     <div class="mapat"><img src="login/css/MAPAT.png"/></div>
 
     <header>
@@ -50,7 +62,15 @@
        <li>>Juan diego González neisa <br> (Diseñador UI/UX)</li><br>
        <li>Santiago Steven Cely Rojas <br> (QA (Control de Calidad))</li><br>
        <li>Yerson Fabian Lasso Bautista <br> (Backend Developer)</li><br>
-       <li>Edward Vladimir Linares <br> (DBA(Database Administrator))</li></div>
-      </ul>
+       <li>Edward Vladimir Linares <br> (DBA(Database Administrator))</li></ul>
+     </div>
+
+
+      <?php
+
+      echo "<br>" . "Hola: " . $_SESSION['emailEstudiante'];
+
+      ?>
+
   </body>
 </html>

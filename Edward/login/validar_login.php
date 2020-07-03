@@ -24,12 +24,16 @@ try {
 
   if($numero_registro!=0){
 
-      header("location:../paginaPrincipal.html");
+      session_start();
+
+      $_SESSION['emailEstudiante']=$_POST['email'];
+
+      header("location:../paginaPrincipal.php");
 
 
   }else{
 
-      header("location:../paginaPrincipal.html");
+      header("location:login.html");
 
   }
 
