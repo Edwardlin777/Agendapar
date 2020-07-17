@@ -69,7 +69,7 @@
 	 $sql = "SELECT * FROM criterio WHERE id_corte like '$id_corte' ";
 	 $criterios = get($conn,$sql);
 	 echo "<div class = 'separar card' style = ' width: 80%'>
-	<h3>" . $cortes[$c]["nombre_corte"] . "</h3>
+	<h3>" . $cortes[$c]["nombre_corte"] ." ". $cortes[$c]["peso_corte"] ."% ". "</h3>
 	<form action='add.php' method='POST'>
 				<!--<input type='submit' name='id_corte' value='-'>-->
 
@@ -77,12 +77,24 @@
 	 echo "<form action='add.php' method='POST'>
 	<p>
 				<b>Añadir criterio</b>
+
 	  			<input hidden type='text' name='clase' value='criterio'>
 				<input hidden type='numeric' name='id_corte' value='$id_corte'>
-	  			<input type='text' name='nombre_criterio' placeholder='Nombre nuevo criterio'>
-	  			<input type='number' name='peso_criterio' placeholder='peso del criterio'>
+<div class='input-group mb-3'>
+<div class='input-group-prepend'
+<span class='input-group-text' id='basic-addon1'>Nombre nuevo criterio</span>
+</div>
+<input class= 'form-control'   type='text' name='nombre_criterio' aria-describedby='basic-addon1'>
+
+<div class='input-group-prepend'
+<span class='input-group-text'  id='basic-addon2'>peso del criterio</span>
+</div>
+<input class='form-control' style='width:50px' type='number' name='peso_criterio'  aria-describedby='basic-addon2'>
+</div>
+
+
 				<!--<input type='number' name='promedio_criterios' placeholder='promedio'>-->
-				<input type='submit' value='+'>
+				<input class='btn btn-success' type='submit' value='+'>
 	</p>
 	</form>";
 
@@ -92,16 +104,23 @@
 	$sql = "SELECT * FROM nota WHERE id_criterio like '$id_criterio' ";
 	$notas = get($conn,$sql);
 	echo "<div class = 'separar card' style = ' width: 80%'>";
-	echo "<h4 >" . $criterios[$cr]["nombre_criterio"] . "</h4>";
-	echo "<form action='add.php' method='POST'>
-	<p>
-					<b >Añadir notas</b>
-	  				<input hidden type='text' name='clase' value='nota'>
-					<input hidden type='numeric' name='id_criterio' value='$id_criterio'>
+	echo "<h4 >" . $criterios[$cr]["nombre_criterio"]." ". $criterios[$cr]["peso_criterio"] ."% ". "</h4>";
+	echo "<div class='input-group mb-3'>
+	<div class='input-group-prepend'
+		<span class='input-group-text' id='basic-addon1'>Nombre nueva nota</span>
+	</div>
+	<input class= 'form-control'  type='text' name='nombre_nota' aria-describedby='basic-addon1'>
 
-					<input type='text' name='nombre_nota' placeholder='Nombre nueva nota'>
-	  				<input type='number' name='peso_nota' placeholder='peso nota'>
-	  				<input type='number' name='valor_nota' placeholder='valor nota'>
+	<div class='input-group-prepend'
+		<span class='input-group-text' id='basic-addon1'>peso nota</span>
+	</div>
+	<input class= 'form-control' type='number' name='peso_nota' aria-describedby='basic-addon1'>
+
+	<div class='input-group-prepend'
+		<span class='input-group-text' id='basic-addon1'>valor nota</span>
+	</div>
+	<input class= 'form-control' type='number' name='valor_nota' aria-describedby='basic-addon1'>
+</div>
 					<input type='submit' value='+'>
 	</p>
 	</form>";

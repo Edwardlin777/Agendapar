@@ -19,8 +19,8 @@
 		  return $r;
 
 	}
-
-$add_numero_documento=$_POST["numero_documento"];
+session_start();
+$add_numero_documento=$_SESSION["id_estudiante"];
 
 //confirmar contrase�a
 

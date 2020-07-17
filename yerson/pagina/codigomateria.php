@@ -69,7 +69,7 @@
 	 $sql = "SELECT * FROM criterio WHERE id_corte like '$id_corte' ";
 	 $criterios = get($conn,$sql);
 	 echo "<div class = 'separar card' style = ' width: 80%'>
-	<h3>" . $cortes[$c]["nombre_corte"] . "</h3>
+	<h3>" . $cortes[$c]["nombre_corte"] ." ". $cortes[$c]["peso_corte"] ."% ". "</h3>
 	<form action='add.php' method='POST'>
 				<!--<input type='submit' name='id_corte' value='-'>-->
 
@@ -92,7 +92,7 @@
 <input class='form-control' style='width:50px' type='number' name='peso_criterio'  aria-describedby='basic-addon2'>
 </div>
 
-		
+
 				<!--<input type='number' name='promedio_criterios' placeholder='promedio'>-->
 				<input class='btn btn-success' type='submit' value='+'>
 	</p>
@@ -104,7 +104,7 @@
 	$sql = "SELECT * FROM nota WHERE id_criterio like '$id_criterio' ";
 	$notas = get($conn,$sql);
 	echo "<div class = 'separar card' style = ' width: 80%'>";
-	echo "<h4 >" . $criterios[$cr]["nombre_criterio"] . "</h4>";
+	echo "<h4 >" . $criterios[$cr]["nombre_criterio"]." ". $criterios[$cr]["peso_criterio"] ."% ". "</h4>";
 	echo "<div class='input-group mb-3'>
 	<div class='input-group-prepend'
 		<span class='input-group-text' id='basic-addon1'>Nombre nueva nota</span>

@@ -28,7 +28,7 @@
       <nav class="navegacion">
         <ul class="menu">
           <li><a href="resumen.html">Resumen</a></li>
-          <li><a href="materiasEstudiante/login.html">Mis materias</a>
+          <li><a href="materiasEstudiante/codigo.php">Mis materias</a>
               <ul class="submenu">
                   <li><a href="materiasEstudiante/login.html">Programacion</a></li>
                   <li><a href="materiasEstudiante/login.html">Promover</a></li>
@@ -70,6 +70,7 @@
 
       echo "<br>" . "Hola: " . $_SESSION['emailEstudiante'];
 
+      echo "<br>" . "Tu id: " . $_SESSION['id_estudiante'];
       ?>
 
   </body>
