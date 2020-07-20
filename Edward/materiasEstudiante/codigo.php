@@ -33,12 +33,7 @@ $add_numero_documento=$_SESSION["id_estudiante"];
   if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
 }
-echo "
-	<head>
-	<link rel='stylesheet' href='style.css' />
-	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
-	</head>
-	";
+
 
 $sql = "SELECT * FROM estudiante WHERE id_estudiante like '$add_numero_documento' ";
 $usuario = get($conn,$sql)[0];

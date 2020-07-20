@@ -8,30 +8,3 @@
     text-align: center;
 }
 
-body{
-    background-color: darkgrey;
-}
-
-.caja1{
-    background-color: darksalmon;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1em;
-    padding: 10px;
-    margin: auto;
-}
-
-.caja2{
-    background-color: darksalmon;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1em;
-    padding: 10px;
-    margin: auto;
-}
-
-.caja3{
-    background-color: darksalmon;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1em;
-    padding: 10px;
-    margin: auto;
-}
