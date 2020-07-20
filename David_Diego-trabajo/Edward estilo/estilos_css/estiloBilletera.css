@@ -1,0 +1,12 @@
+body{
+	 font-family: 'Roboto', sans-serif;
+	
+}
+
+.card{
+	padding: 2%;
+		background-color:#CD5C5C;
+}
+.form-control form-control-lg{
+	background-color:#CD5C5C;
+}
