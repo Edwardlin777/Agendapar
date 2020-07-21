@@ -43,11 +43,7 @@
 	echo "
 	<head>
 	<link rel='stylesheet' href='style.css' />
-<<<<<<< HEAD
 	<link rel='stylesheet' href='estiloCodigoMateria.css'/>
-=======
-	</head>
->>>>>>> 
 	";
 	?>
 	<div class ="corte">
