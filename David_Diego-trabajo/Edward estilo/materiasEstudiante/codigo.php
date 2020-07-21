@@ -37,7 +37,14 @@ $add_numero_documento=$_SESSION["id_estudiante"];
 
 $sql = "SELECT * FROM estudiante WHERE id_estudiante like '$add_numero_documento' ";
 $usuario = get($conn,$sql)[0];
-echo "<h1>Hi ". $usuario['nombres'] ." ". $usuario['apellidos']."</h1>";
+echo "
+	<head>
+	<link rel='stylesheet' href='style2.css' />
+	</head>
+	";
+?>
+<div class="descripcion">
+<?php echo "<h1>Hi ". $usuario['nombres'] ." ". $usuario['apellidos']."</h1>";
 
 $sql = "SELECT * FROM carrera WHERE id_estudiante like '$add_numero_documento' ";
 $carrera = get($conn,$sql)[0];
@@ -47,31 +54,40 @@ $id_carrera = $carrera["id_carrera"];
 $sql = "SELECT * FROM semestre WHERE id_carrera like '$id_carrera' ";
 $semestre = get($conn,$sql)[0];
 
-print_r($semestre["id_semestre"]);
+print_r("Semestre: " . $semestre["id_semestre"]);
 
 $id_semestre = $semestre["id_semestre"];
 $sql = "SELECT * FROM materia WHERE id_semestre like '$id_semestre' ";
 $materias = get($conn,$sql);
 
 
-echo "<h2> estas son tus materias </h2>";
+echo "<br><br>" . "<h3> Tus materias: </h3>";
 for ($x = 0; $x < sizeof($materias); $x++)
 {
   $id_materia = $materias[$x]["id_materia"];
+  ?>
+  <div class="materia">
+  <?php
+  echo  $materias[$x]["nombre_materia"]; 
+  ?>
+  </div>
+  <?php
+   
+  echo
+  "<div class='boton'><form  action='codigomateria.php' method='POST'>
 
-  echo "<h3>" . $materias[$x]["nombre_materia"] .
+  <input class='boton2' type='submit' value='Ver'>
 
-  "<br><form action='codigomateria.php' method='POST'>
+    <input class='textofantasma' type='text' name='id_materia' value='$id_materia'>
 
-    Ver la materia(s)
+    
 
-    <!--<input type='text' name='id_materia' value='$id_materia'>-->
-
-    <input type='submit' name='id_materia' value='$id_materia'>
-
-
-  </form>";
-}
+  </form></div><br>";
+  /*echo "<div class='ver'>Ver</div>";*/
+} 
+?>
+</div>
+<?php
 mysqli_close($conn);
 
 //formato deseado
@@ -83,4 +99,4 @@ mysqli_close($conn);
 		[["Cortes segundo","40","50%"],$criterios]
 		];
 	*/
-?>
+
