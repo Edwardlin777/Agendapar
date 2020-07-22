@@ -38,6 +38,7 @@ if ($add_password==$add_confirm_password) {
   if (mysqli_query($conn, $sql)) {
 
         echo "Agenda creada con exito";
+        header("location:login.html");
 
   } else {
         echo "Error: " . $sql . mysqli_error($conn);
