@@ -71,7 +71,7 @@
 	 $id_corte = $cortes[$c]["id_corte"];
 	 $sql = "SELECT * FROM criterio WHERE id_corte like '$id_corte' ";
 	 $criterios = get($conn,$sql);
-	 echo "<div class = 'corte' style = ' width: 80%'>
+	 echo "<div class = 'corte'>
 	<h3>" . $cortes[$c]["nombre_corte"] ." ". $cortes[$c]["peso_corte"] ."% ". "</h3>
 	<form action='add.php' method='POST'>
 				<!--<input type='submit' name='id_corte' value='-'>-->
@@ -107,6 +107,7 @@
 	$sql = "SELECT * FROM nota WHERE id_criterio like '$id_criterio' ";
 	$notas = get($conn,$sql);
 	echo "<div class = 'corte' style = ' width: 80%'>";
+	echo "<div class='corte3'> ";
 	echo "<h4 >" . $criterios[$cr]["nombre_criterio"]." ". $criterios[$cr]["peso_criterio"] ."% ". "</h4>";
 	echo "<div class='input-group mb-3'>
 	<div class='input-group-prepend'
@@ -127,8 +128,10 @@
 
 					<input type='submit' value='+'>
 	</p>
-
+	
 	</form>";
+echo "</div>";
+echo "<div class='corte4'> ";
 	for ($n = 0; $n < sizeof($notas); $n++)
 	{
 	  echo "<div class = 'corte2' style = ' width: 80%'>
@@ -139,9 +142,9 @@
 	  . $notas[$n]["valor_nota"]
 	  . "  "
 	  . "</p>
-	  </div>";
+	  </div><br><br>";  
 	}
-		
+echo "</div> ";
 	  echo "</div> <br><br>";
 	  }
 	 

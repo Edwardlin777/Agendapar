@@ -2,39 +2,76 @@ body{
     background: #bbafa0;
 }
 .corte{
-   margin-left: auto;
-   margin-right: auto;
-    text-decoration: none;
-    font-weight: 400;
-    margin-right: auto;
-    border: 3px;
-    border-style: solid;
-   
-    border-radius: 20px;
-    padding: 8px 20px;
-    width: 70%;
-    height: auto;
-    background-color: #eeeeee;
-   
-    font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 3px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 8px 20px;
+  width: 80%;
+  height: auto;
+  background-color: #eeeeee; 
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
+
 .corte2 {
-    position: relative;
-     
-    max-width: 200px;
-     text-decoration: none;
-     font-weight: 400;
-   bottom: 200px;
-     border: 3px;
-     border-style: solid;
-    
-     border-radius: 20px;
-     padding: 8px 20px;
-     
-     height: auto;
-     background-color: #eeeeee;
-     margin-left: 45%;
-     
-     font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 3px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 8px 20px;
+  width: auto;
+  height: auto;
+  background-color: #eeeeee;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+.corte .corte3 {
+  display: inline-block;
+  position: relative;
+  margin-left: 7%;
+  margin-right: 4%;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 3px;
+  border-style: solid;
+  border-color: #eeeeee;
+  border-radius: 20px;
+  padding: 8px 20px;
+  width: auto;
+  height: auto;
+  background-color: #eeeeee;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+.corte4 {
+  display: inline-block;
+  position: relative;
+  margin-left: 4%;
+  margin-right: 7%;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 3px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 8px 20px;
+  border-color: #eeeeee;
+  max-width: 30%;
+  height: auto;
+  background-color: #eeeeee;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
  
