@@ -27,7 +27,7 @@
     <header>
       <nav class="navegacion">
         <ul class="menu">
-          <li><a href="resumen.html">Resumen</a></li>
+          <li><a href="resumen.php">Resumen</a></li>
           <li><a href="materiasEstudiante/codigo.php">Mis materias</a>
               <ul class="submenu">
                   <li><a href="materiasEstudiante/login.html">Programacion</a></li>
