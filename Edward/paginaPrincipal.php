@@ -30,7 +30,7 @@
           <li><a href="resumen.php">Resumen</a></li>
           <li><a href="materiasEstudiante/codigo.php">Mis materias</a>
               <ul class="submenu">
-                  <li><a href="materiasEstudiante/login.html">Programacion</a></li>
+                  <li><a href="agregarCarrera/agregarCarrera.html">Agregar Carrera</a></li>
                   <li><a href="materiasEstudiante/login.html">Promover</a></li>
                   <li><a href="materiasEstudiante/login.html">Ingles</a></li>
               </ul>
@@ -59,7 +59,7 @@
       <div class="cuadro3" ><br><br><h2>Equipo conformado por:</h2>
       <ul><br><br>
        <li>David esteban Martínez <br> (Frontend Developer)</li> <br>
-       <li>>Juan diego González neisa <br> (Diseñador UI/UX)</li><br>
+       <li>Juan diego González neisa <br> (Diseñador UI/UX)</li><br>
        <li>Santiago Steven Cely Rojas <br> (QA (Control de Calidad))</li><br>
        <li>Yerson Fabian Lasso Bautista <br> (Backend Developer)</li><br>
        <li>Edward Vladimir Linares <br> (DBA(Database Administrator))</li></ul>
