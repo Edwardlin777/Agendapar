@@ -51,7 +51,7 @@
 	echo "<h2>Cortes</h2>";
 	echo "<form class='añadir' action='add.php' method='POST'>
 	<p>
-			
+
 			<b>Añadir corte</b>
 	  		<input hidden type='text' name='clase' value='corte'>
 			<input hidden type='nu'me'ric' name='id_materia' value='$id_materia'>
@@ -109,7 +109,7 @@
 	echo "<div class = 'corte5' style = ' width: 80%'>";
 	echo "<div class='corte3'> ";
 	echo "<h4 >" . $criterios[$cr]["nombre_criterio"]." ". $criterios[$cr]["peso_criterio"] ."% ". "</h4>";
-	echo "<div class='input-group mb-3'>
+	echo "<form action='add.php' method='POST'><p><div class='input-group mb-3'>
 	<div class='input-group-prepend'
 		<span class='input-group-text' id='basic-addon1'>Nombre nueva nota</span>
 	</div>
@@ -128,7 +128,7 @@
 
 					<input type='submit' value='+'>
 	</p>
-	
+
 	</form>";
 echo "</div>";
 echo "<div class='corte4'> ";
@@ -142,12 +142,12 @@ echo "<div class='corte4'> ";
 	  . $notas[$n]["valor_nota"]
 	  . "  "
 	  . "</p>
-	  </div><br>";  
+	  </div><br>";
 	}
 echo "</div> ";
 	  echo "</div> <br><br>";
 	  }
-	 
+
 	 echo "</div><br><br>";
 	}
 	echo "</div> ";
