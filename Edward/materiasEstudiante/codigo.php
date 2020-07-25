@@ -47,18 +47,44 @@ echo "
 <?php echo "<h1>Hi ". $usuario['nombres'] ." ". $usuario['apellidos']."</h1>";
 
 $sql = "SELECT * FROM carrera WHERE id_estudiante like '$add_numero_documento' ";
-$carrera = get($conn,$sql)[0];
-echo "<p> estas cursando la carrera <b>" . $carrera["carrera_cursada"] . "</b></p>";
+$ans = get($conn,$sql);
+$carrera=0;
+if(count ($ans) != 0)
+  $carrera = $ans[0];
+else{
+  echo "carrera soy";
+  header("location:../agregarCarrera/agregarCarrera.html");
+  die();
+}
+echo "<p> Estas cursando la carrera <b>" . $carrera["carrera_cursada"] . "</b></p>";
 
 $id_carrera = $carrera["id_carrera"];
 $sql = "SELECT * FROM semestre WHERE id_carrera like '$id_carrera' ";
-$semestre = get($conn,$sql)[0];
+
+$ans = get($conn,$sql);
+$semestre=0;
+if(count ($ans) != 0)
+  $semestre = $ans[0];
+else{
+  echo "tu semestre";
+  header("location:../agregarSemestre/agregarSemestre.html");
+  die();
+}
 
 print_r("Semestre: " . $semestre["id_semestre"]);
 
 $id_semestre = $semestre["id_semestre"];
 $sql = "SELECT * FROM materia WHERE id_semestre like '$id_semestre' ";
-$materias = get($conn,$sql);
+
+$ans = get($conn,$sql);
+$materias=0;
+if(count ($ans) != 0)
+  $materias = $ans;
+else{
+
+  header("location:../agregarMateria/agregarMateria.html");
+  die();
+}
 
 
 echo "<br><br>" . "<h3> Tus materias: </h3>";
@@ -68,11 +94,11 @@ for ($x = 0; $x < sizeof($materias); $x++)
   ?>
   <div class="materia">
   <?php
-  echo  $materias[$x]["nombre_materia"]; 
+  echo  $materias[$x]["nombre_materia"];
   ?>
   </div>
   <?php
-   
+
   echo
   "<div class='boton'><form  action='codigomateria.php' method='POST'>
 
@@ -80,23 +106,13 @@ for ($x = 0; $x < sizeof($materias); $x++)
 
     <input class='textofantasma' type='text' name='id_materia' value='$id_materia'>
 
-    
+
 
   </form></div><br>";
   /*echo "<div class='ver'>Ver</div>";*/
-} 
+}
 ?>
 </div>
 <?php
 mysqli_close($conn);
-
-//formato deseado
-	/*
-		$notas = [[["Activida no se que","30","30%"],[]],[["Activida introductoria","20","60%"],[]],[["Actividad leer 30 libros","40","10%"],[]]];
-		$criterios = [[["Actividades","30","30%"],$notas],[["Evaluacion","20","60%"],$notas],[["Quiz","40","10%"],$notas]];
-		$cortes = [
-		[["Cortes primero","40","50%"],$criterios],
-		[["Cortes segundo","40","50%"],$criterios]
-		];
-	*/
-
+?>

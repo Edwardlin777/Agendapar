@@ -76,8 +76,8 @@
 	<form action='add.php' method='POST'>
 				<!--<input type='submit' name='id_corte' value='-'>-->
 
-	</form>";
-	 echo "<form action='add.php' method='POST'>
+	</form>
+	<form action='add.php' method='POST'>
 	<p>
 				<b>Añadir criterio</b>
 
@@ -106,32 +106,37 @@
 	  $id_criterio = $criterios[$cr]["id_criterio"];
 	$sql = "SELECT * FROM nota WHERE id_criterio like '$id_criterio' ";
 	$notas = get($conn,$sql);
-	echo "<div class = 'corte5' style = ' width: 80%'>";
-	echo "<div class='corte3'> ";
-	echo "<h4 >" . $criterios[$cr]["nombre_criterio"]." ". $criterios[$cr]["peso_criterio"] ."% ". "</h4>";
-	echo "<form action='add.php' method='POST'><p><div class='input-group mb-3'>
-	<div class='input-group-prepend'
-		<span class='input-group-text' id='basic-addon1'>Nombre nueva nota</span>
-	</div>
-	<input class= 'form-control'  type='text' name='nombre_nota' aria-describedby='basic-addon1'>
+	echo "
+	<div class = 'corte5' style = ' width: 80%'>
+		<div class='corte3'>
+			<h4 >" . $criterios[$cr]["nombre_criterio"]." ". $criterios[$cr]["peso_criterio"] ."% </h4>
+			<form action='add.php' method='POST'>
+				<p>
+					<div class='input-group mb-3'>
+						<div class='input-group-prepend'
+							<span class='input-group-text' id='basic-addon1'>Nombre nueva nota</span>
+						</div>
+						<input hidden type='text' name='clase' value='nota'>
+						<input hidden type='numeric' name='id_criterio' value='$id_criterio'>
 
-	<div class='input-group-prepend'
-		<span class='input-group-text' id='basic-addon1'>peso nota</span>
-	</div>
-	<input class= 'form-control' type='number' name='peso_nota' aria-describedby='basic-addon1'>
+						<input class= 'form-control'  type='text' name='nombre_nota' aria-describedby='basic-addon1'>
 
-	<div class='input-group-prepend'
-		<span class='input-group-text' id='basic-addon1'>valor nota</span>
-	</div>
-	<input class= 'form-control' type='number' name='valor_nota' aria-describedby='basic-addon1'>
-</div>
+						<div class='input-group-prepend'
+							<span class='input-group-text' id='basic-addon1'>peso nota</span>
+						</div>
+						<input class= 'form-control' type='number' name='peso_nota' aria-describedby='basic-addon1'>
 
+						<div class='input-group-prepend'
+						<span class='input-group-text' id='basic-addon1'>valor nota</span>
+						</div>
+
+						<input class= 'form-control' type='number' name='valor_nota' aria-describedby='basic-addon1'>
+					</div>
 					<input type='submit' value='+'>
-	</p>
-
-	</form>";
-echo "</div>";
-echo "<div class='corte4'> ";
+				</p>
+			</form>
+		</div>
+	<div class='corte4'> ";
 	for ($n = 0; $n < sizeof($notas); $n++)
 	{
 	  echo "<div class = 'corte2' style = ' width: 80%'>
@@ -151,8 +156,10 @@ echo "</div> ";
 	 echo "</div><br><br>";
 	}
 	echo "</div> ";
-	?><br><br>
-		</div>
-		<?php
-	mysqli_close($conn);
 	?>
+	<br>
+	<br>
+	</div>
+	<?php
+		mysqli_close($conn);
+?>
