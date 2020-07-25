@@ -3,13 +3,32 @@
 session_start();
 
 $idEstudiante = $_SESSION['id_estudiante'];
-$add_carrera_cursada = $_POST['carrera_cursada'];
-$add_creditos_necesarios_aprobar_carrera = $_POST['creditos_necesarios_aprobar_carrera'];
+$add_creditos_totales_del_semestre = $_POST['creditos_totales_del_semestre'];
+$add_nombre_semestre = $_POST['nombre_semestre'];
 
 
   include("conn.php");
 
   $inc = include("conn.php");
+
+  session_start();
+
+  $id = $_SESSION['id_estudiante'];
+
+  $inc = include("conn.php");
+
+  if ($inc) {
+    $consulta = "SELECT * FROM carrera WHERE id_estudiante like '$id' ";
+    $resultado = mysqli_query($conn,$consulta);
+    if ($resultado) {
+      while ($row = $resultado->fetch_array()) {
+        $id_estudiante = $row['id_estudiante'];
+        $id_carrera = $row['id_carrera'];
+
+
+      }
+    }
+  }
 
 
     $sql = "INSERT INTO semestre
@@ -20,16 +39,17 @@ $add_creditos_necesarios_aprobar_carrera = $_POST['creditos_necesarios_aprobar_c
     nombre_semestre) VALUES
 
     ('',
-    '$add_carrera_cursada',
-    '$add_creditos_necesarios_aprobar_carrera',
-    '')";
+    '$id_carrera',
+    '$add_creditos_totales_del_semestre',
+    '',
+    '$add_nombre_semestre')";
 
      mysqli_query($conn, $sql);
 
 
 if ($sql) {
 
-  echo "Carrera creada";
+  echo "Semestre creado";
 
     header("location:../paginaPrincipal.php");
 

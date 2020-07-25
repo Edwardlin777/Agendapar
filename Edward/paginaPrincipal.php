@@ -31,8 +31,8 @@
           <li><a href="materiasEstudiante/codigo.php">Mis materias</a>
               <ul class="submenu">
                   <li><a href="agregarCarrera/agregarCarrera.html">Agregar Carrera</a></li>
-                  <li><a href="materiasEstudiante/login.html">Promover</a></li>
-                  <li><a href="materiasEstudiante/login.html">Ingles</a></li>
+                  <li><a href="agregarSemestre/agregarSemestre.html">Agregar Semestre</a></li>
+                  <li><a href="agregarMateria/agregarMateria.html">agregarSemestre/agregar Materia</a></li>
               </ul>
           </li>
           <li><a href="billetera.html">Billetera</a></li>
