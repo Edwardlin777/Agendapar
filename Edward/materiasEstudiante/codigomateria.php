@@ -43,15 +43,18 @@
 	echo "
 	<head>
 	<link rel='stylesheet' href='style.css' />
-	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
-	</head>
+	<link rel='stylesheet' href='estiloCodigoMateria.css'/>
 	";
+	?>
+	<div class ="corte">
+	<?php
 	echo "<h2>Cortes</h2>";
-	echo "<form action='add.php' method='POST'>
+	echo "<form class='añadir' action='add.php' method='POST'>
 	<p>
+			
 			<b>Añadir corte</b>
 	  		<input hidden type='text' name='clase' value='corte'>
-			<input hidden type='numeric' name='id_materia' value='$id_materia'>
+			<input hidden type='nu'me'ric' name='id_materia' value='$id_materia'>
 	        <input type='text' name='nombre_corte' placeholder='Nombre corte'>
 	        <input type='number' name='peso_corte' placeholder='peso'>
 	  		<!--<input type='number' name='promedio_corte' placeholder='promedio'>-->
@@ -60,7 +63,7 @@
 		   	<input type='submit' value='+'>
 	</p>
 
-	</form>
+	</form><br>
 
 	";
 	for ($c = 0; $c < sizeof($cortes); $c++)
@@ -68,7 +71,7 @@
 	 $id_corte = $cortes[$c]["id_corte"];
 	 $sql = "SELECT * FROM criterio WHERE id_corte like '$id_corte' ";
 	 $criterios = get($conn,$sql);
-	 echo "<div class = 'separar card' style = ' width: 80%'>
+	 echo "<div class = 'corte'>
 	<h3>" . $cortes[$c]["nombre_corte"] ." ". $cortes[$c]["peso_corte"] ."% ". "</h3>
 	<form action='add.php' method='POST'>
 				<!--<input type='submit' name='id_corte' value='-'>-->
@@ -103,7 +106,8 @@
 	  $id_criterio = $criterios[$cr]["id_criterio"];
 	$sql = "SELECT * FROM nota WHERE id_criterio like '$id_criterio' ";
 	$notas = get($conn,$sql);
-	echo "<div class = 'separar card' style = ' width: 80%'>";
+	echo "<div class = 'corte5' style = ' width: 80%'>";
+	echo "<div class='corte3'> ";
 	echo "<h4 >" . $criterios[$cr]["nombre_criterio"]." ". $criterios[$cr]["peso_criterio"] ."% ". "</h4>";
 	echo "<div class='input-group mb-3'>
 	<div class='input-group-prepend'
@@ -121,26 +125,34 @@
 	</div>
 	<input class= 'form-control' type='number' name='valor_nota' aria-describedby='basic-addon1'>
 </div>
+
 					<input type='submit' value='+'>
 	</p>
+	
 	</form>";
-
-		for ($n = 0; $n < sizeof($notas); $n++)
-	   {
-		 echo "<div class = 'separar card' style = ' width: 80%'>
-		 <p >" . $notas[$n]["nombre_nota"]
-		 . "  <b>"
-		 . $notas[$n]["peso_nota"]
-		 . "</b>%  "
-		 . $notas[$n]["valor_nota"]
-		 . "  "
-		 . "</p>
-		 </div>";
-	   }
-	  echo "</div>";
-	  }
-	 echo "</div>";
+echo "</div>";
+echo "<div class='corte4'> ";
+	for ($n = 0; $n < sizeof($notas); $n++)
+	{
+	  echo "<div class = 'corte2' style = ' width: 80%'>
+	  <p >" . $notas[$n]["nombre_nota"]
+	  . "  <b>"
+	  . $notas[$n]["peso_nota"]
+	  . "</b>%  "
+	  . $notas[$n]["valor_nota"]
+	  . "  "
+	  . "</p>
+	  </div><br>";  
 	}
-	echo "</div>";
+echo "</div> ";
+	  echo "</div> <br><br>";
+	  }
+	 
+	 echo "</div><br><br>";
+	}
+	echo "</div> ";
+	?><br><br>
+		</div>
+		<?php
 	mysqli_close($conn);
 	?>
