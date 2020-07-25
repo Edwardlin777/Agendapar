@@ -106,7 +106,7 @@
 	  $id_criterio = $criterios[$cr]["id_criterio"];
 	$sql = "SELECT * FROM nota WHERE id_criterio like '$id_criterio' ";
 	$notas = get($conn,$sql);
-	echo "<div class = 'corte' style = ' width: 80%'>";
+	echo "<div class = 'corte5' style = ' width: 80%'>";
 	echo "<div class='corte3'> ";
 	echo "<h4 >" . $criterios[$cr]["nombre_criterio"]." ". $criterios[$cr]["peso_criterio"] ."% ". "</h4>";
 	echo "<div class='input-group mb-3'>
@@ -142,7 +142,7 @@ echo "<div class='corte4'> ";
 	  . $notas[$n]["valor_nota"]
 	  . "  "
 	  . "</p>
-	  </div><br><br>";  
+	  </div><br>";  
 	}
 echo "</div> ";
 	  echo "</div> <br><br>";
