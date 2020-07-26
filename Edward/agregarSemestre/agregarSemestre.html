@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="../estilos_css/estiloAgregarSemestre.css">
   </head>
   <body>
-
+    <div class="contenedor">
 <form class="formulario" action="agregarSemestre.php" method="post">
   <h1><b>Agrega tu(s) Semestre</b></h1>
-    <div class="contenedor">
+   
 
   <br>
 
@@ -31,14 +31,15 @@
         <option value="semestre 12">12</option>
       </select><br><br>
 
-      <input type="number" name="creditos_totales_del_semestre" placeholder="Creditos que ofrece"><br>
+      <input type="number" name="creditos_totales_del_semestre" placeholder="Creditos que ofrece" class="creditos" max="500" min="0"><br>
 
       </div>
 
    <br>
 
-  <div class="boton">
+  
     <input type="submit" value="Agregar Semestre" class="botton">
 </form>
+</div>
 </body>
 </html>

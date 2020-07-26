@@ -9,21 +9,23 @@
 
   </body>
 </html>
+<div class="contenedor">
 <form class="formulario" action="agregarCarrera.php" method="post">
   <h1><b>Agrega tu carrera</b></h1>
-    <div class="contenedor">
+    
 
   <br>
 
   <div class="input-contenedor">
       <i class="fas fa-user"></i>
       <input type="text" name="carrera_cursada" placeholder ="Carrera"><br><br>
-      <input type="number" name="creditos_necesarios_aprobar_carrera" placeholder="Creditos para pasar la carrera"><br>
+      <input type="number" name="creditos_necesarios_aprobar_carrera" placeholder="Creditos para pasar la carrera " max="1000" min="0" class="numero"><br>
 
       </div>
 
    <br>
 
-  <div class="boton">
+  
     <input type="submit" value="Agregar Carrera" class="botton">
 </form>
+</div>
