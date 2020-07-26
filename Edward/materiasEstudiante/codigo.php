@@ -40,7 +40,7 @@ $sql = "SELECT * FROM estudiante WHERE id_estudiante like '$add_numero_documento
 $usuario = get($conn,$sql)[0];
 echo "
 	<head>
-	<link rel='stylesheet' href='style2.css' />
+	<link rel='stylesheet' href='style2.css'></link>
 	</head>
 	";
 ?>
