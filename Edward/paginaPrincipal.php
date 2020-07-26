@@ -42,12 +42,12 @@
       </nav>
     </header>
 
-        <div class="boton1">
+        <!--<div class="boton1">
           <a href="login/login.html" class="iniciar-sesion">INICIAR SESION</a>
         </div>
         <div class="boton2">
           <a href="login/registrarse.html" class="registrarse">REGISTRARSE</a>
-        </div>
+        </div>-->
       <div class="cuadro1"><h2 class="titulo1"><br><br>Objetivo general</h2>
         <br/><br/><p>Facilitar la gestion y la organizacion de datos
          del usuario mediante una Agenda virtual</p><br><br><img class="agendafea" src="login/css/AGENDA.jpg"/> </div>

@@ -13,11 +13,10 @@ body{
 .navegacion{
   position: relative;
   display: inline-block;
-  width: 1000px;
-  margin: 30px auto;
-  background: #c83609;
-  left: 440px;
-
+  width: 67%;
+  background: #c9b2ab;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navegacion ul li{
   width: 19.679%;
@@ -74,7 +73,7 @@ body{
   visibility: visible;
   opacity: 1;
 }
-.boton1{
+/*.boton1{
   position: relative;
   display: inline-block;
   left: 1570px;
@@ -117,7 +116,7 @@ body{
   padding: 10px 20px;
   color: #313D52;
   background: white;
-}
+}*/
 .mapat > img{
 	display: inline-block;
 	height: 50px;
@@ -131,37 +130,38 @@ body{
 }
 .cuadro1{
   text-align: center;
-  left: -285px;
-  height: 500px;
   position: relative;
+  margin-left: 2.5%;
+  margin-right: 1.5%;
+  height: 500px;
   display: inline-block;
 	background:#eeeeee;
 	padding: 10px;
-	width: 300px;
-  bottom: -5px;
+	width: 25%;
 }
 .cuadro2{
   text-align: center;
-  left: -120px;
+  margin-left: 1%;
+  margin-right: 1%;
   height: 380px;
   position: relative;
   display: inline-block;
   background:#eeeeee;
-	padding: 3px;
-  width: 870px;
-  bottom: 20px;
+  padding: 3px;
+  bottom: 3%;
+  width: 40%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .cuadro3{
   text-align: center;
-  left: 70px;
+  margin-left: 1.5%;
+  margin-right: 2.5%;
   height: 500px;
   position: relative;
   display: inline-block;
   background:#eeeeee;
 	padding: 30px;
-  width: 300px;
-  bottom: -12px;
+  width: 25%;
 }
 .agendafea{
   height: 180px;
