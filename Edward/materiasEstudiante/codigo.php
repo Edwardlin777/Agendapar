@@ -20,7 +20,8 @@
 
 	}
 session_start();
-$add_numero_documento=$_SESSION["id_estudiante"];
+$add_numero_documento = $_SESSION["id_estudiante"];
+$nombre_semestre = $_SESSION['nombre_semestre'];
 
 //confirmar contrase�a
 
@@ -56,7 +57,7 @@ else{
   header("location:../agregarCarrera/agregarCarrera.html");
   die();
 }
-echo "<p> Estas cursando la carrera <b>" . $carrera["carrera_cursada"] . "</b></p>";
+echo "<p> Estas cursando la carrera " . "<i><u>" . $carrera["carrera_cursada"] . "</u></i>" . "</p>";
 
 $id_carrera = $carrera["id_carrera"];
 $sql = "SELECT * FROM semestre WHERE id_carrera like '$id_carrera' ";
@@ -66,12 +67,11 @@ $semestre=0;
 if(count ($ans) != 0)
   $semestre = $ans[0];
 else{
-  echo "tu semestre";
   header("location:../agregarSemestre/agregarSemestre.html");
   die();
 }
 
-print_r("Semestre: " . $semestre["id_semestre"]);
+echo $nombre_semestre;
 
 $id_semestre = $semestre["id_semestre"];
 $sql = "SELECT * FROM materia WHERE id_semestre like '$id_semestre' ";
