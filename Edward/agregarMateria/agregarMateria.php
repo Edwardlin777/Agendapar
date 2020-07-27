@@ -34,7 +34,6 @@ $add_nota_maxima = $_POST['nota_maxima'];
     if ($resultado2) {
       while ($row2 = $resultado2->fetch_array()) {
         $id_semestre = $row2['id_semestre'];
-        $nombre_semestre = $row2['nombre_semestre'];
 
       }
     }
@@ -61,7 +60,6 @@ $add_nota_maxima = $_POST['nota_maxima'];
 if (mysqli_query($conn, $sql)) {
 
     echo "Materia creada";
-    $_SESSION['nombre_semestre'] = $nombre_semestre;
 
     header("location:../paginaPrincipal.php");
 
