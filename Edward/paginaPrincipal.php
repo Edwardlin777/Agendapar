@@ -35,7 +35,7 @@
                   <li><a href="agregarMateria/agregarMateria.html">Agregar Materia</a></li>
               </ul>
           </li>
-          <li><a href="billetera.html">Billetera</a></li>
+          <li><a href="billetera.php">Billetera</a></li>
           <li><a href="horario.html">Horario</a></li>
           <li><a href="configuración.html">Configuración</a></li>
         </ul>
@@ -89,7 +89,7 @@ echo "<br>" . "<div class='hola'><h2 >". "Bienvenido ". $nombre_estudiante . "</
      </div>
 
 
-      
+
 
   </body>
 </html>
