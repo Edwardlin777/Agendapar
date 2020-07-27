@@ -60,7 +60,7 @@
 	  		<!--<input type='number' name='promedio_corte' placeholder='promedio'>-->
 
 
-		   	<input type='submit' value='+'>
+		   	<input type='submit' value='+' class='botton'>
 	</p>
 
 	</form><br>
@@ -97,7 +97,7 @@
 
 
 				<!--<input type='number' name='promedio_criterios' placeholder='promedio'>-->
-				<input class='btn btn-success' type='submit' value='+'>
+				<input class='botton' type='submit' value='+'>
 	</p>
 	</form>";
 
@@ -132,7 +132,7 @@
 
 						<input class= 'form-control' type='number' name='valor_nota' aria-describedby='basic-addon1'>
 					</div>
-					<input type='submit' value='+'>
+					<input type='submit' value='+' class='botton'>
 				</p>
 			</form>
 		</div>

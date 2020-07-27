@@ -7,7 +7,9 @@
 }
 
 body{
-  background: #313D52;
+  background-image: linear-gradient(to top, #37539efb 0%, #1e1e49fa 100%);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .navegacion{
@@ -179,6 +181,24 @@ body{
   width: 190px;
 }
 
+.hola{
+  position: relative;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  top: 100px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 15px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 90%);
+  box-shadow: 0 0 40px 0 #a1c4fd;
+}
+.hola:hover{
+  background-image: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+  color: #dddddd;
+  box-shadow: 0 0 40px 0 #9864c4;
+}
 
   /*padding: 4px 0;
   width: 100px;

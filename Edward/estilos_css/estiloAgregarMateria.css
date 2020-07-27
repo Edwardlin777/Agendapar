@@ -1,5 +1,7 @@
 body{
-    background: #bbafa0;
+    background-image: linear-gradient( #37539efb 0%, #1e1e49fa 100%);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .contenedor{
     width: 28%;
@@ -28,8 +30,8 @@ body{
 }
 .botton{
     border-radius: 5px;
-   border-color: gray;
-   background-color: #56aed1;
-   margin-left: 25%;
-   margin-right: auto;
+    border-color: gray;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    margin-left: auto;
+    margin-right: auto;
 }

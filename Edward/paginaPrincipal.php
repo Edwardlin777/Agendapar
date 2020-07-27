@@ -41,7 +41,30 @@
         </ul>
       </nav>
     </header>
+    <?php
 
+include("conn.php");
+
+$id = $_SESSION['id_estudiante'];
+
+$inc = include("conn.php");
+
+if ($inc) {
+  $consulta = "SELECT * FROM estudiante WHERE id_estudiante like '$id' ";
+  $resultado = mysqli_query($conn,$consulta);
+  if ($resultado) {
+    while ($row = $resultado->fetch_array()) {
+      $id_estudiante = $row['id_estudiante'];
+      $nombre_estudiante = $row['nombres'];
+
+
+    }
+  }
+}
+
+echo "<br>" . "<div class='hola'><h2 >". "Bienvenido ". $nombre_estudiante . "</h2></div>";
+
+?>
         <!--<div class="boton1">
           <a href="login/login.html" class="iniciar-sesion">INICIAR SESION</a>
         </div>
@@ -66,30 +89,7 @@
      </div>
 
 
-      <?php
-
-      include("conn.php");
-
-      $id = $_SESSION['id_estudiante'];
-
-      $inc = include("conn.php");
-
-      if ($inc) {
-        $consulta = "SELECT * FROM estudiante WHERE id_estudiante like '$id' ";
-        $resultado = mysqli_query($conn,$consulta);
-        if ($resultado) {
-          while ($row = $resultado->fetch_array()) {
-            $id_estudiante = $row['id_estudiante'];
-            $nombre_estudiante = $row['nombres'];
-
-
-          }
-        }
-      }
-
-      echo "<br>" . "<h2>". "Hola ". $nombre_estudiante . "</h2>";
-
-      ?>
+      
 
   </body>
 </html>
