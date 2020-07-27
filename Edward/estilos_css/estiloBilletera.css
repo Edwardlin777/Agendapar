@@ -13,3 +13,10 @@ body{
 	margin-top: 25px;
 	margin-left: 15px;
 }
+.botton{
+    border-radius: 5px;
+    border-color: gray;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
