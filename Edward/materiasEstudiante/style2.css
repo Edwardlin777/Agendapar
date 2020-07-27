@@ -1,19 +1,19 @@
 body{
-    background-color: white;
+    background-color: #bbafa0;
 }
 .descripcion{
     text-decoration: none;
     font-weight: 600;
+    margin-top: 25px;
+    margin-left: 15px;
     margin-right: auto;
     border: 3px;
-    border-style: solid;
-    border-color: #000000;
     border-radius: 20px;
     padding: 8px 20px;
     width: 25%;
     height: auto;   
-    background-color: #eeeeee;
-    box-shadow: #000000 8px 8px 18px;
+    background-color: #dddddd;
+    box-shadow: 0px 0px 30px 0px #000000;
     font-family: 'Roboto', sans-serif;
 }
 .textofantasma{
@@ -21,7 +21,7 @@ body{
     height: 1px;
     text-decoration: none;
     border: none;
-    background-color: #eeeeee;
+    background-color: #dddddd;
 
 }
 .boton{
@@ -29,7 +29,7 @@ body{
     display: inline-block;
     margin-bottom: auto;
     margin-left: auto;
-    background-color: #eeeeee;
+    background-color: #dddddd;
     text-decoration: none;
     font-weight: 600;
     }
@@ -46,6 +46,10 @@ body{
     position: relative;
     margin: auto;
     display: inline-block;
+}
+b{
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*.link{
     position: relative;

@@ -90,7 +90,7 @@ else{
   header("location:../agregarCarrera/agregarCarrera.html");
   die();
 }
-echo "<p> Estas cursando la carrera " . "<i><u>" . $carrera["carrera_cursada"] . "</u></i>" . "</p>";
+echo "<p> Estas cursando la carrera " . "<b>" . $carrera["carrera_cursada"] . "</b>" . "</p>";
 
 $id_carrera = $carrera["id_carrera"];
 $sql = "SELECT * FROM semestre WHERE id_carrera like '$id_carrera' ";

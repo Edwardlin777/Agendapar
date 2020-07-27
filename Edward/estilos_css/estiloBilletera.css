@@ -1,12 +1,13 @@
 body{
 	 font-family: 'Roboto', sans-serif;
-	
+		background: #bbafa0;	
 }
-
-.card{
-	padding: 2%;
-		background-color:#CD5C5C;
-}
-.form-control form-control-lg{
-	background-color:#CD5C5C;
+.contenedor{
+	background-color:#dddddd;
+	width:25%;
+	border-radius: 20px;
+	padding: 15px;
+	box-shadow: 0px 0px 30px 0px #000000;
+	margin-top: 25px;
+	margin-left: 15px;
 }

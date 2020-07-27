@@ -45,7 +45,7 @@ body{
 }
 
 .menu li a:hover{
-  background: #fff;
+  background: #dddddd;
   transition: all .03s;
 }
 
@@ -53,7 +53,7 @@ body{
 
 .submenu{
   position: absolute;
-  background: #c83609;
+  background: #c9b2ab;
   width: 19.69%;
   visibility: hidden;
   opacity: 0;
@@ -69,6 +69,9 @@ body{
   text-decoration: none;
   width: 500%;
 
+}
+.submenu li a:hover{
+  background: #dddddd;
 }
 
 .menu li:hover .submenu{
@@ -129,6 +132,7 @@ body{
   display: inline-block;
   top: 10px;
   left: 85%;
+  
 }
 .cuadro1{
   margin-top: 50px;
@@ -137,9 +141,10 @@ body{
   margin-right: 1.5%;
   height: auto;
   display: inline-block;
-	background:#eeeeee;
+	background:#dddddd;
 	padding: 10px;
-	width: 25%;
+  width: 25%;
+  border-radius: 20px;
 }
 .cuadro2{
   text-align: center;
@@ -148,8 +153,10 @@ body{
   height: auto;
   position: relative;
   display: inline-block;
-  background:#eeeeee;
+  background:#dddddd;
+  
   padding: 3px;
+  border-radius: 20px;
   top: 5px;
   width: 40%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -161,7 +168,8 @@ body{
   height: auto;
   position: relative;
   display: inline-block;
-  background:#eeeeee;
+  background:#dddddd;
+  border-radius: 20px;
   padding: 30px;
   bottom: 25px;
   width: 25%;

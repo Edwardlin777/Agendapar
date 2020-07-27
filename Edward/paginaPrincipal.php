@@ -32,7 +32,7 @@
               <ul class="submenu">
                   <li><a href="agregarCarrera/agregarCarrera.html">Agregar Carrera</a></li>
                   <li><a href="agregarSemestre/agregarSemestre.html">Agregar Semestre</a></li>
-                  <li><a href="agregarMateria/agregarMateria.html">agregar Materia</a></li>
+                  <li><a href="agregarMateria/agregarMateria.html">Agregar Materia</a></li>
               </ul>
           </li>
           <li><a href="billetera.html">Billetera</a></li>
