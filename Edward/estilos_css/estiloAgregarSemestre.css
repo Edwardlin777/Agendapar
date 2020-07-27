@@ -23,9 +23,12 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.creditos{
+/*.creditos{
     width: 50%;
 }
 .creditos:focus{
     width: 17%;
+}*/
+.cuadrito{
+    width: 32%;
 }
