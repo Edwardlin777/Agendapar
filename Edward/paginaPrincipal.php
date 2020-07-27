@@ -68,9 +68,27 @@
 
       <?php
 
-      echo "<br>" . "Hola: " . $_SESSION['emailEstudiante'];
+      include("conn.php");
 
-      echo "<br>" . "Tu id: " . $_SESSION['id_estudiante'];
+      $id = $_SESSION['id_estudiante'];
+
+      $inc = include("conn.php");
+
+      if ($inc) {
+        $consulta = "SELECT * FROM estudiante WHERE id_estudiante like '$id' ";
+        $resultado = mysqli_query($conn,$consulta);
+        if ($resultado) {
+          while ($row = $resultado->fetch_array()) {
+            $id_estudiante = $row['id_estudiante'];
+            $nombre_estudiante = $row['nombres'];
+
+
+          }
+        }
+      }
+
+      echo "<br>" . "<h2>". "Hola ". $nombre_estudiante . "</h2>";
+
       ?>
 
   </body>
