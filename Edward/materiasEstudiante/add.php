@@ -128,4 +128,5 @@ switch ($clase)
     }
     echo $sql . "<br>";
     echo "agregado con exito";
+    echo '<br><a href="codigomateria.php">Regresar a la pagina</a>';
 ?>
