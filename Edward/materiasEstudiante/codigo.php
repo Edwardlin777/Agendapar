@@ -21,7 +21,6 @@
 	}
 session_start();
 $add_numero_documento = $_SESSION["id_estudiante"];
-$nombre_semestre = $_SESSION['nombre_semestre'];
 
 ////////////////////////////////////////////
 
